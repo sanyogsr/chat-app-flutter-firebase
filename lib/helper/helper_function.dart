@@ -32,7 +32,7 @@ class HelperFunctions {
     return sf.getBool(userLoggedInKey);
   }
 
-  static Future<String?> getUseerNameFromSf() async {
+  static Future<String?> getUserNameFromSf() async {
     SharedPreferences sf = await SharedPreferences.getInstance();
     return sf.getString(userNameKey);
   }

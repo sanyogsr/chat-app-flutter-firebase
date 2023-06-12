@@ -33,6 +33,13 @@ Future<Query<Object?>> gettingUserData(String email) async{
       return snapshot;
        }
 
+Future getUserGroups() async{
+  return userCollection.doc(uid).snapshots();
+
+}
+//getting user groups
+
+
 
 
 }

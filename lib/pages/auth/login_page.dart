@@ -26,11 +26,19 @@ class _LoginPageState extends State<LoginPage> {
   String password = "";
   final formKey = GlobalKey<FormState>();
   AuthServices authServices = AuthServices();
+  bool _isLoading = false;
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: SingleChildScrollView(
+      body:
+          // _isLoading
+          //     ? Center(
+          //         child: CircularProgressIndicator(
+          //           color: Theme.of(context).primaryColor,
+          //         ),
+          //       )
+          SingleChildScrollView(
         child: Padding(
           padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 80),
           child: Form(

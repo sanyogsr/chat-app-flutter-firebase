@@ -1,11 +1,14 @@
-
 import 'package:chat_app/helper/helper_function.dart';
 import 'package:chat_app/pages/auth/login_page.dart';
 import 'package:chat_app/pages/profile_page.dart';
 import 'package:chat_app/pages/search_page.dart';
 import 'package:chat_app/services/auth_services.dart';
+import 'package:chat_app/services/datdabase_services.dart';
 import 'package:chat_app/widgets/widgets.dart';
+import 'package:firebase_auth/firebase_auth.dart';
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/rendering.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -18,6 +21,7 @@ class _HomePageState extends State<HomePage> {
   String userName = "";
   String email = "";
   AuthServices authService = AuthServices();
+  Stream? groups;
   @override
   void initState() {
     // TODO: implement initState
@@ -31,11 +35,17 @@ class _HomePageState extends State<HomePage> {
             email = value!;
           })
         });
-    await HelperFunctions.getUseerNameFromSf().then((value) => {
+    await HelperFunctions.getUserNameFromSf().then((value) => {
           setState(() {
             userName = value!;
           })
         });
+    //getting the list of snapshots in our stream
+    await DatabaseServices(uid: FirebaseAuth.instance.currentUser!.uid)
+        .getUserGroups()
+        .then((value) {
+      value = groups;
+    });
   }
 
   @override
@@ -84,7 +94,7 @@ class _HomePageState extends State<HomePage> {
               selected: true,
               contentPadding:
                   const EdgeInsets.symmetric(horizontal: 20, vertical: 5),
-              leading: const Icon(Icons.person_4_rounded),
+              leading: const Icon(Icons.groups_2),
               title: const Text(
                 'Groups',
                 style: TextStyle(color: Colors.black),
@@ -92,12 +102,17 @@ class _HomePageState extends State<HomePage> {
             ),
             ListTile(
               onTap: () {
-                nextScreen(context, ProfilePage());
+                nextScreenreplace(
+                    context,
+                    ProfilePage(
+                      userName: userName,
+                      email: email,
+                    ));
               },
               selectedColor: Theme.of(context).primaryColor,
               contentPadding:
                   const EdgeInsets.symmetric(horizontal: 20, vertical: 5),
-              leading: const Icon(Icons.groups_2),
+              leading: const Icon(Icons.person_4_rounded),
               title: const Text(
                 'Profile',
                 style: TextStyle(color: Colors.black),
@@ -106,6 +121,7 @@ class _HomePageState extends State<HomePage> {
             ListTile(
               onTap: () async {
                 showDialog(
+                    barrierDismissible: false,
                     context: context,
                     builder: (context) {
                       return AlertDialog(
@@ -121,10 +137,12 @@ class _HomePageState extends State<HomePage> {
                                 color: Colors.red,
                               )),
                           IconButton(
-                              onPressed: () {
-                                authService.signOut().whenComplete(() {
-                                  nextScreenreplace(context, LoginPage());
-                                });
+                              onPressed: () async {
+                                await authService.signOut();
+                                Navigator.of(context).pushAndRemoveUntil(
+                                    MaterialPageRoute(
+                                        builder: (context) => LoginPage()),
+                                    (route) => false);
                               },
                               icon: Icon(
                                 Icons.done,
@@ -146,6 +164,60 @@ class _HomePageState extends State<HomePage> {
           ],
         ),
       ),
+
+      //  body: groupList() ,
+      floatingActionButton: FloatingActionButton(
+        onPressed: () {
+          popUpDialog();
+        },
+        backgroundColor: Theme.of(context).primaryColor,
+        child: Icon(
+          Icons.add,
+          size: 30,
+        ),
+      ),
+      body: groupList(),
+    );
+  }
+
+  popUpDialog() {}
+
+  groupList() {
+    return StreamBuilder(
+        stream: groups,
+        builder: (context, AsyncSnapshot snapshot) {
+//make some checks
+          if (snapshot.hasData) {
+            if (snapshot.data['groups'] != null) {
+              if (snapshot.data['groups'] != 0) {
+                return Text('kya bolti public');
+              } else {
+                return noGroupWidget();
+              }
+            } else {
+              return noGroupWidget();
+            }
+          } else {
+            return Center(
+              child: CircularProgressIndicator(color: Colors.blue),
+            );
+          }
+        });
+  }
+
+  noGroupWidget() {
+    return Container(
+      padding: EdgeInsets.symmetric(horizontal: 25),
+      child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          crossAxisAlignment: CrossAxisAlignment.center,
+          children: [
+            Icon(
+              Icons.add_circle,
+              color: Colors.grey,
+              size: 75,
+            )
+          ]),
     );
   }
 }
