@@ -32,12 +32,12 @@ Future<Query<Object?>> gettingUserData(String email) async{
    Query<Object?> snapshot  =await userCollection.where('email', isEqualTo: email);
       return snapshot;
        }
+//getting user groups
 
 Future getUserGroups() async{
   return userCollection.doc(uid).snapshots();
 
 }
-//getting user groups
 
 
 

@@ -24,7 +24,7 @@ class _MainState extends State<Main> {
   bool _isSignedIn = false;
   @override
   void initState() {
-    super.initState();   
+    super.initState();
     getUserLoggedIn();
   }
 

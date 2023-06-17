@@ -6,7 +6,8 @@ import 'package:chat_app/services/auth_services.dart';
 import 'package:chat_app/services/datdabase_services.dart';
 import 'package:chat_app/widgets/widgets.dart';
 import 'package:firebase_auth/firebase_auth.dart';
-import 'package:firebase_core/firebase_core.dart';
+import 'package:flutter/foundation.dart';
+// import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 
@@ -22,6 +23,8 @@ class _HomePageState extends State<HomePage> {
   String email = "";
   AuthServices authService = AuthServices();
   Stream? groups;
+  bool isLoading = false;
+  String groupName = "";
   @override
   void initState() {
     // TODO: implement initState
@@ -43,8 +46,11 @@ class _HomePageState extends State<HomePage> {
     //getting the list of snapshots in our stream
     await DatabaseServices(uid: FirebaseAuth.instance.currentUser!.uid)
         .getUserGroups()
-        .then((value) {
-      value = groups;
+        .then((snapshot) {
+      setState(() {
+        groups = snapshot;
+        // snapshot = groups;
+      });
     });
   }
 
@@ -168,7 +174,7 @@ class _HomePageState extends State<HomePage> {
       //  body: groupList() ,
       floatingActionButton: FloatingActionButton(
         onPressed: () {
-          popUpDialog();
+          popUpDialog(context);
         },
         backgroundColor: Theme.of(context).primaryColor,
         child: Icon(
@@ -180,7 +186,53 @@ class _HomePageState extends State<HomePage> {
     );
   }
 
-  popUpDialog() {}
+  popUpDialog(BuildContext context) {
+    showDialog(
+        barrierDismissible: false,
+        context: context,
+        builder: (context) {
+          return AlertDialog(
+            title: Text('Create a Group'),
+            content: Column(mainAxisSize: MainAxisSize.min, children: [
+              isLoading == true
+                  ? Center(
+                      child: CircularProgressIndicator(
+                        color: Theme.of(context).primaryColor,
+                      ),
+                    )
+                  : TextField(
+                    onChanged: (val){
+                      setState(() {
+                        
+                      });
+
+                    },
+                      decoration: InputDecoration(
+                          enabledBorder: OutlineInputBorder(
+                              borderSide: BorderSide(
+                                  color: Theme.of(context).primaryColor),
+                              borderRadius: BorderRadius.circular(20)),
+                          errorBorder: OutlineInputBorder(
+                              borderSide: BorderSide(
+                                  color: Theme.of(context).primaryColor),
+                              borderRadius: BorderRadius.circular(20)),
+                          focusedBorder: OutlineInputBorder(
+                              borderSide: BorderSide(
+                                  color: Theme.of(context).primaryColor),
+                              borderRadius: BorderRadius.circular(20))),
+                    ),
+            ]),
+            actions: [
+              ElevatedButton(
+                  onPressed: () {
+                    Navigator.pop(context);
+                  },
+                  child: Text('Cancel')),
+              ElevatedButton(onPressed: () {}, child: Text('Create'))
+            ],
+          );
+        });
+  }
 
   groupList() {
     return StreamBuilder(
@@ -189,7 +241,7 @@ class _HomePageState extends State<HomePage> {
 //make some checks
           if (snapshot.hasData) {
             if (snapshot.data['groups'] != null) {
-              if (snapshot.data['groups'] != 0) {
+              if (snapshot.data['groups'].length != 0) {
                 return Text('kya bolti public');
               } else {
                 return noGroupWidget();
@@ -199,7 +251,8 @@ class _HomePageState extends State<HomePage> {
             }
           } else {
             return Center(
-              child: CircularProgressIndicator(color: Colors.blue),
+              child: CircularProgressIndicator(
+                  color: Theme.of(context).primaryColor),
             );
           }
         });
@@ -207,15 +260,25 @@ class _HomePageState extends State<HomePage> {
 
   noGroupWidget() {
     return Container(
-      padding: EdgeInsets.symmetric(horizontal: 25),
+      padding: const EdgeInsets.symmetric(horizontal: 25),
       child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
-            Icon(
-              Icons.add_circle,
-              color: Colors.grey,
-              size: 75,
+            GestureDetector(
+              onTap: () => popUpDialog(context),
+              child: Icon(
+                Icons.add_circle,
+                color: Colors.grey,
+                size: 75,
+              ),
+            ),
+            const SizedBox(
+              height: 20,
+            ),
+            const Text(
+              ' You have not joined any group, so Tap on add icon to create the group',
+              textAlign: TextAlign.center,
             )
           ]),
     );
