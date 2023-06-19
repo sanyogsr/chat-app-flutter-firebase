@@ -4,12 +4,10 @@ import 'package:chat_app/pages/profile_page.dart';
 import 'package:chat_app/pages/search_page.dart';
 import 'package:chat_app/services/auth_services.dart';
 import 'package:chat_app/services/datdabase_services.dart';
+import 'package:chat_app/widgets/group_tile.dart';
 import 'package:chat_app/widgets/widgets.dart';
 import 'package:firebase_auth/firebase_auth.dart';
-import 'package:flutter/foundation.dart';
-// import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/rendering.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -32,6 +30,16 @@ class _HomePageState extends State<HomePage> {
     gettingUserData();
   }
 
+  //string manipulation
+
+  String getId(String res) {
+    return res.substring(0, res.indexOf('_'));
+  }
+
+  String getName(String res) {
+    return res.substring(res.indexOf("_") + 1);
+  }
+
   gettingUserData() async {
     await HelperFunctions.getuserEmailFromSf().then((value) => {
           setState(() {
@@ -43,13 +51,13 @@ class _HomePageState extends State<HomePage> {
             userName = value!;
           })
         });
+
     //getting the list of snapshots in our stream
     await DatabaseServices(uid: FirebaseAuth.instance.currentUser!.uid)
         .getUserGroups()
         .then((snapshot) {
       setState(() {
         groups = snapshot;
-        // snapshot = groups;
       });
     });
   }
@@ -201,12 +209,12 @@ class _HomePageState extends State<HomePage> {
                       ),
                     )
                   : TextField(
-                    onChanged: (val){
-                      setState(() {
-                        
-                      });
-
-                    },
+                      onChanged: (val) {
+                        setState(() {
+                          groupName = val;
+                          debugPrint(groupName);
+                        });
+                      },
                       decoration: InputDecoration(
                           enabledBorder: OutlineInputBorder(
                               borderSide: BorderSide(
@@ -224,11 +232,34 @@ class _HomePageState extends State<HomePage> {
             ]),
             actions: [
               ElevatedButton(
+                  style: ElevatedButton.styleFrom(
+                      backgroundColor: Theme.of(context).primaryColor),
                   onPressed: () {
                     Navigator.pop(context);
                   },
                   child: Text('Cancel')),
-              ElevatedButton(onPressed: () {}, child: Text('Create'))
+              ElevatedButton(
+                  onPressed: () {
+                    if (groupName != null) {
+                      setState(() {
+                        isLoading = true;
+                      });
+                      DatabaseServices(
+                              uid: FirebaseAuth.instance.currentUser!.uid)
+                          .createGroup(userName,
+                              FirebaseAuth.instance.currentUser!.uid, groupName)
+                          .whenComplete(() {
+                        isLoading = false;
+                      });
+
+                      Navigator.pop(context);
+                      showSnackBar(
+                          context, Colors.green, "Group created successfully");
+                    }
+                  },
+                  style: ElevatedButton.styleFrom(
+                      backgroundColor: Theme.of(context).primaryColor),
+                  child: Text('Create'))
             ],
           );
         });
@@ -242,7 +273,19 @@ class _HomePageState extends State<HomePage> {
           if (snapshot.hasData) {
             if (snapshot.data['groups'] != null) {
               if (snapshot.data['groups'].length != 0) {
-                return Text('kya bolti public');
+                return ListView.builder(
+                    physics: const AlwaysScrollableScrollPhysics(
+                        parent: BouncingScrollPhysics()),
+                    itemCount: snapshot.data["groups"].length,
+                    itemBuilder: (context, index) {
+                      int reverseIndex =
+                          snapshot.data['groups'].length - index - 1;
+                      return GroupTile(
+                          groupId: getId(snapshot.data['groups'][reverseIndex]),
+                          groupName:
+                              getName(snapshot.data['groups'][reverseIndex]),
+                          userName: snapshot.data['fullName']);
+                    });
               } else {
                 return noGroupWidget();
               }

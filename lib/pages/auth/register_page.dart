@@ -4,7 +4,6 @@ import 'package:chat_app/pages/home_page.dart';
 import 'package:chat_app/services/auth_services.dart';
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
-
 import '../../widgets/widgets.dart';
 
 class RegisterPage extends StatefulWidget {
@@ -76,7 +75,7 @@ class _RegisterPageState extends State<RegisterPage> {
                             });
                           },
                         ),
-                        SizedBox(
+                        const SizedBox(
                           height: 20,
                         ),
                         TextFormField(
@@ -97,12 +96,10 @@ class _RegisterPageState extends State<RegisterPage> {
                           onChanged: (value) {
                             setState(() {
                               email = value;
-
-                              print(value);
                             });
                           },
                         ),
-                        SizedBox(
+                        const SizedBox(
                           height: 20,
                         ),
                         TextFormField(
@@ -147,7 +144,7 @@ class _RegisterPageState extends State<RegisterPage> {
                                     fontSize: 17, color: Colors.white),
                               )),
                         ),
-                        SizedBox(
+                        const SizedBox(
                           height: 10,
                         ),
                         Text.rich(TextSpan(

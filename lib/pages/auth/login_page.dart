@@ -1,16 +1,11 @@
-// import 'dart:math';
-
 import 'package:chat_app/helper/helper_function.dart';
 import 'package:chat_app/pages/auth/register_page.dart';
 import 'package:chat_app/pages/home_page.dart';
 import 'package:chat_app/services/auth_services.dart';
 import 'package:chat_app/services/datdabase_services.dart';
-// import 'package:chat_app/shared/constants.dart';
 import 'package:chat_app/widgets/widgets.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
-import 'package:firebase_core/firebase_core.dart';
-// import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 
@@ -26,7 +21,7 @@ class _LoginPageState extends State<LoginPage> {
   String password = "";
   final formKey = GlobalKey<FormState>();
   AuthServices authServices = AuthServices();
-  bool _isLoading = false;
+  // bool _isLoading = false;
 
   @override
   Widget build(BuildContext context) {
@@ -47,7 +42,7 @@ class _LoginPageState extends State<LoginPage> {
                 mainAxisAlignment: MainAxisAlignment.center,
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: <Widget>[
-                  Text(
+                const  Text(
                     'Groupie',
                     style: TextStyle(fontSize: 50, fontWeight: FontWeight.bold),
                   ),
