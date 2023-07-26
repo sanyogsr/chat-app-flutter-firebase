@@ -40,7 +40,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\91805\\myown\\chat_app\\android\\app\\src\\main\\res\\values\\styles.xml",
+                    "source": "C:\\Users\\91805\\myown\\Groupie\\android\\app\\src\\main\\res\\values\\styles.xml",
                     "from": {
                         "startLines": "3,14",
                         "startColumns": "4,4",
@@ -78,23 +78,6 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\91805\\myown\\chat_app\\build\\app\\generated\\res\\google-services\\debug\\values\\values.xml",
-                    "from": {
-                        "startLines": "2,3,4,5,6,7,8",
-                        "startColumns": "4,4,4,4,4,4,4",
-                        "startOffsets": "55,200,283,387,497,617,715",
-                        "endColumns": "144,82,103,109,119,97,74",
-                        "endOffsets": "195,278,382,492,612,710,785"
-                    },
-                    "to": {
-                        "startLines": "126,130,131,132,133,134,135",
-                        "startColumns": "4,4,4,4,4,4,4",
-                        "startOffsets": "8973,9333,9416,9520,9630,9750,9848",
-                        "endColumns": "144,82,103,109,119,97,74",
-                        "endOffsets": "9113,9411,9515,9625,9745,9843,9918"
-                    }
-                },
-                {
                     "source": "C:\\Users\\91805\\.gradle\\caches\\transforms-3\\cf72013d765e0f69e97cd3b9cbb09800\\transformed\\core-1.6.0\\res\\values\\values.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,89,90,94,95,96,97,104,111,159,191,228",
@@ -128,6 +111,23 @@
                         "startOffsets": "661,719,785,848,1713,1784,8905,9118,9185,9264",
                         "endColumns": "57,65,62,61,70,71,67,66,78,68",
                         "endOffsets": "714,780,843,905,1779,1851,8968,9180,9259,9328"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\91805\\myown\\Groupie\\build\\app\\generated\\res\\google-services\\debug\\values\\values.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8",
+                        "startColumns": "4,4,4,4,4,4,4",
+                        "startOffsets": "55,200,283,387,497,617,715",
+                        "endColumns": "144,82,103,109,119,97,74",
+                        "endOffsets": "195,278,382,492,612,710,785"
+                    },
+                    "to": {
+                        "startLines": "126,130,131,132,133,134,135",
+                        "startColumns": "4,4,4,4,4,4,4",
+                        "startOffsets": "8973,9333,9416,9520,9630,9750,9848",
+                        "endColumns": "144,82,103,109,119,97,74",
+                        "endOffsets": "9113,9411,9515,9625,9745,9843,9918"
                     }
                 }
             ]

@@ -1,12 +1,12 @@
 -- Merging decision tree log ---
 application
-INJECTED from C:\Users\91805\myown\chat_app\android\app\src\main\AndroidManifest.xml:2:5-32:19
-MERGED from [:firebase_auth] C:\Users\91805\myown\chat_app\build\firebase_auth\intermediates\merged_manifest\debug\AndroidManifest.xml:9:5-15:19
-MERGED from [:firebase_auth] C:\Users\91805\myown\chat_app\build\firebase_auth\intermediates\merged_manifest\debug\AndroidManifest.xml:9:5-15:19
-MERGED from [:cloud_firestore] C:\Users\91805\myown\chat_app\build\cloud_firestore\intermediates\merged_manifest\debug\AndroidManifest.xml:9:5-15:19
-MERGED from [:cloud_firestore] C:\Users\91805\myown\chat_app\build\cloud_firestore\intermediates\merged_manifest\debug\AndroidManifest.xml:9:5-15:19
-MERGED from [:firebase_core] C:\Users\91805\myown\chat_app\build\firebase_core\intermediates\merged_manifest\debug\AndroidManifest.xml:9:5-15:19
-MERGED from [:firebase_core] C:\Users\91805\myown\chat_app\build\firebase_core\intermediates\merged_manifest\debug\AndroidManifest.xml:9:5-15:19
+INJECTED from C:\Users\91805\myown\Groupie\android\app\src\main\AndroidManifest.xml:2:5-32:19
+MERGED from [:firebase_auth] C:\Users\91805\myown\Groupie\build\firebase_auth\intermediates\merged_manifest\debug\AndroidManifest.xml:9:5-15:19
+MERGED from [:firebase_auth] C:\Users\91805\myown\Groupie\build\firebase_auth\intermediates\merged_manifest\debug\AndroidManifest.xml:9:5-15:19
+MERGED from [:cloud_firestore] C:\Users\91805\myown\Groupie\build\cloud_firestore\intermediates\merged_manifest\debug\AndroidManifest.xml:9:5-15:19
+MERGED from [:cloud_firestore] C:\Users\91805\myown\Groupie\build\cloud_firestore\intermediates\merged_manifest\debug\AndroidManifest.xml:9:5-15:19
+MERGED from [:firebase_core] C:\Users\91805\myown\Groupie\build\firebase_core\intermediates\merged_manifest\debug\AndroidManifest.xml:9:5-15:19
+MERGED from [:firebase_core] C:\Users\91805\myown\Groupie\build\firebase_core\intermediates\merged_manifest\debug\AndroidManifest.xml:9:5-15:19
 MERGED from [com.google.firebase:firebase-auth:22.0.0] C:\Users\91805\.gradle\caches\transforms-3\f2585cf44996ac27f88306250cf33811\transformed\jetified-firebase-auth-22.0.0\AndroidManifest.xml:28:5-73:19
 MERGED from [com.google.firebase:firebase-auth:22.0.0] C:\Users\91805\.gradle\caches\transforms-3\f2585cf44996ac27f88306250cf33811\transformed\jetified-firebase-auth-22.0.0\AndroidManifest.xml:28:5-73:19
 MERGED from [androidx.window:window:1.0.0-beta04] C:\Users\91805\.gradle\caches\transforms-3\003a22a5515e1f77f89701a46efbc2ec\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:24:5-31:19
@@ -34,17 +34,17 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\91
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.6.0] C:\Users\91805\.gradle\caches\transforms-3\cf72013d765e0f69e97cd3b9cbb09800\transformed\core-1.6.0\AndroidManifest.xml:24:18-86
 	android:name
-		INJECTED from C:\Users\91805\myown\chat_app\android\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\91805\myown\Groupie\android\app\src\main\AndroidManifest.xml
 manifest
-ADDED from C:\Users\91805\myown\chat_app\android\app\src\main\AndroidManifest.xml:1:1-33:12
-INJECTED from C:\Users\91805\myown\chat_app\android\app\src\main\AndroidManifest.xml:1:1-33:12
-INJECTED from C:\Users\91805\myown\chat_app\android\app\src\main\AndroidManifest.xml:1:1-33:12
-INJECTED from C:\Users\91805\myown\chat_app\android\app\src\main\AndroidManifest.xml:1:1-33:12
-MERGED from C:\Users\91805\myown\chat_app\android\app\src\main\AndroidManifest.xml:1:1-33:12
-MERGED from [:shared_preferences_android] C:\Users\91805\myown\chat_app\build\shared_preferences_android\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-9:12
-MERGED from [:firebase_auth] C:\Users\91805\myown\chat_app\build\firebase_auth\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-17:12
-MERGED from [:cloud_firestore] C:\Users\91805\myown\chat_app\build\cloud_firestore\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-17:12
-MERGED from [:firebase_core] C:\Users\91805\myown\chat_app\build\firebase_core\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-17:12
+ADDED from C:\Users\91805\myown\Groupie\android\app\src\main\AndroidManifest.xml:1:1-33:12
+INJECTED from C:\Users\91805\myown\Groupie\android\app\src\main\AndroidManifest.xml:1:1-33:12
+INJECTED from C:\Users\91805\myown\Groupie\android\app\src\main\AndroidManifest.xml:1:1-33:12
+INJECTED from C:\Users\91805\myown\Groupie\android\app\src\main\AndroidManifest.xml:1:1-33:12
+MERGED from C:\Users\91805\myown\Groupie\android\app\src\main\AndroidManifest.xml:1:1-33:12
+MERGED from [:shared_preferences_android] C:\Users\91805\myown\Groupie\build\shared_preferences_android\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-9:12
+MERGED from [:firebase_auth] C:\Users\91805\myown\Groupie\build\firebase_auth\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-17:12
+MERGED from [:cloud_firestore] C:\Users\91805\myown\Groupie\build\cloud_firestore\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-17:12
+MERGED from [:firebase_core] C:\Users\91805\myown\Groupie\build\firebase_core\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-17:12
 MERGED from [androidx.multidex:multidex:2.0.0] C:\Users\91805\.gradle\caches\transforms-3\21513f382a2cb911afbfd9752dabba47\transformed\multidex-2.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [com.google.firebase:firebase-auth:22.0.0] C:\Users\91805\.gradle\caches\transforms-3\f2585cf44996ac27f88306250cf33811\transformed\jetified-firebase-auth-22.0.0\AndroidManifest.xml:17:1-75:12
 MERGED from [com.google.android.recaptcha:recaptcha:18.1.2] C:\Users\91805\.gradle\caches\transforms-3\9c645efb41dcacbd160e32d5a3e1894c\transformed\jetified-recaptcha-18.1.2\AndroidManifest.xml:2:1-10:12
@@ -81,35 +81,35 @@ MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] C:\Users\91805\.gradl
 MERGED from [com.google.firebase:protolite-well-known-types:18.0.0] C:\Users\91805\.gradle\caches\transforms-3\a8f3976df63db55bd2a7ed93bbfe7223\transformed\jetified-protolite-well-known-types-18.0.0\AndroidManifest.xml:2:1-11:12
 MERGED from [io.grpc:grpc-android:1.52.1] C:\Users\91805\.gradle\caches\transforms-3\b8d152da90f8ad50ccb85843bc53a8de\transformed\jetified-grpc-android-1.52.1\AndroidManifest.xml:2:1-11:12
 MERGED from [androidx.annotation:annotation-experimental:1.1.0] C:\Users\91805\.gradle\caches\transforms-3\717758e51a3aff0b90b2556f8994e808\transformed\jetified-annotation-experimental-1.1.0\AndroidManifest.xml:17:1-24:12
-INJECTED from C:\Users\91805\myown\chat_app\android\app\src\debug\AndroidManifest.xml:1:1-7:12
-INJECTED from C:\Users\91805\myown\chat_app\android\app\src\debug\AndroidManifest.xml:1:1-7:12
-INJECTED from C:\Users\91805\myown\chat_app\android\app\src\debug\AndroidManifest.xml:1:1-7:12
+INJECTED from C:\Users\91805\myown\Groupie\android\app\src\debug\AndroidManifest.xml:1:1-7:12
+INJECTED from C:\Users\91805\myown\Groupie\android\app\src\debug\AndroidManifest.xml:1:1-7:12
+INJECTED from C:\Users\91805\myown\Groupie\android\app\src\debug\AndroidManifest.xml:1:1-7:12
 	package
-		INJECTED from C:\Users\91805\myown\chat_app\android\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\91805\myown\chat_app\android\app\src\main\AndroidManifest.xml:1:1-33:12
-		INJECTED from C:\Users\91805\myown\chat_app\android\app\src\debug\AndroidManifest.xml
+		INJECTED from C:\Users\91805\myown\Groupie\android\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\91805\myown\Groupie\android\app\src\main\AndroidManifest.xml:1:1-33:12
+		INJECTED from C:\Users\91805\myown\Groupie\android\app\src\debug\AndroidManifest.xml
 	android:versionName
-		INJECTED from C:\Users\91805\myown\chat_app\android\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\91805\myown\chat_app\android\app\src\main\AndroidManifest.xml:1:1-33:12
-		INJECTED from C:\Users\91805\myown\chat_app\android\app\src\debug\AndroidManifest.xml
+		INJECTED from C:\Users\91805\myown\Groupie\android\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\91805\myown\Groupie\android\app\src\main\AndroidManifest.xml:1:1-33:12
+		INJECTED from C:\Users\91805\myown\Groupie\android\app\src\debug\AndroidManifest.xml
 	android:versionCode
-		INJECTED from C:\Users\91805\myown\chat_app\android\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\91805\myown\chat_app\android\app\src\main\AndroidManifest.xml:1:1-33:12
-		INJECTED from C:\Users\91805\myown\chat_app\android\app\src\debug\AndroidManifest.xml
+		INJECTED from C:\Users\91805\myown\Groupie\android\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\91805\myown\Groupie\android\app\src\main\AndroidManifest.xml:1:1-33:12
+		INJECTED from C:\Users\91805\myown\Groupie\android\app\src\debug\AndroidManifest.xml
 	xmlns:android
-		ADDED from C:\Users\91805\myown\chat_app\android\app\src\main\AndroidManifest.xml:1:11-69
+		ADDED from C:\Users\91805\myown\Groupie\android\app\src\main\AndroidManifest.xml:1:11-69
 uses-sdk
-INJECTED from C:\Users\91805\myown\chat_app\android\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
-INJECTED from C:\Users\91805\myown\chat_app\android\app\src\main\AndroidManifest.xml
-INJECTED from C:\Users\91805\myown\chat_app\android\app\src\main\AndroidManifest.xml
-MERGED from [:shared_preferences_android] C:\Users\91805\myown\chat_app\build\shared_preferences_android\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
-MERGED from [:shared_preferences_android] C:\Users\91805\myown\chat_app\build\shared_preferences_android\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
-MERGED from [:firebase_auth] C:\Users\91805\myown\chat_app\build\firebase_auth\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
-MERGED from [:firebase_auth] C:\Users\91805\myown\chat_app\build\firebase_auth\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
-MERGED from [:cloud_firestore] C:\Users\91805\myown\chat_app\build\cloud_firestore\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
-MERGED from [:cloud_firestore] C:\Users\91805\myown\chat_app\build\cloud_firestore\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
-MERGED from [:firebase_core] C:\Users\91805\myown\chat_app\build\firebase_core\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
-MERGED from [:firebase_core] C:\Users\91805\myown\chat_app\build\firebase_core\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
+INJECTED from C:\Users\91805\myown\Groupie\android\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from C:\Users\91805\myown\Groupie\android\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\91805\myown\Groupie\android\app\src\main\AndroidManifest.xml
+MERGED from [:shared_preferences_android] C:\Users\91805\myown\Groupie\build\shared_preferences_android\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
+MERGED from [:shared_preferences_android] C:\Users\91805\myown\Groupie\build\shared_preferences_android\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
+MERGED from [:firebase_auth] C:\Users\91805\myown\Groupie\build\firebase_auth\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
+MERGED from [:firebase_auth] C:\Users\91805\myown\Groupie\build\firebase_auth\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
+MERGED from [:cloud_firestore] C:\Users\91805\myown\Groupie\build\cloud_firestore\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
+MERGED from [:cloud_firestore] C:\Users\91805\myown\Groupie\build\cloud_firestore\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
+MERGED from [:firebase_core] C:\Users\91805\myown\Groupie\build\firebase_core\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
+MERGED from [:firebase_core] C:\Users\91805\myown\Groupie\build\firebase_core\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
 MERGED from [androidx.multidex:multidex:2.0.0] C:\Users\91805\.gradle\caches\transforms-3\21513f382a2cb911afbfd9752dabba47\transformed\multidex-2.0.0\AndroidManifest.xml:20:5-43
 MERGED from [androidx.multidex:multidex:2.0.0] C:\Users\91805\.gradle\caches\transforms-3\21513f382a2cb911afbfd9752dabba47\transformed\multidex-2.0.0\AndroidManifest.xml:20:5-43
 MERGED from [com.google.firebase:firebase-auth:22.0.0] C:\Users\91805\.gradle\caches\transforms-3\f2585cf44996ac27f88306250cf33811\transformed\jetified-firebase-auth-22.0.0\AndroidManifest.xml:21:5-23:64
@@ -182,18 +182,18 @@ MERGED from [io.grpc:grpc-android:1.52.1] C:\Users\91805\.gradle\caches\transfor
 MERGED from [io.grpc:grpc-android:1.52.1] C:\Users\91805\.gradle\caches\transforms-3\b8d152da90f8ad50ccb85843bc53a8de\transformed\jetified-grpc-android-1.52.1\AndroidManifest.xml:5:5-7:41
 MERGED from [androidx.annotation:annotation-experimental:1.1.0] C:\Users\91805\.gradle\caches\transforms-3\717758e51a3aff0b90b2556f8994e808\transformed\jetified-annotation-experimental-1.1.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.annotation:annotation-experimental:1.1.0] C:\Users\91805\.gradle\caches\transforms-3\717758e51a3aff0b90b2556f8994e808\transformed\jetified-annotation-experimental-1.1.0\AndroidManifest.xml:20:5-22:41
-INJECTED from C:\Users\91805\myown\chat_app\android\app\src\debug\AndroidManifest.xml
-INJECTED from C:\Users\91805\myown\chat_app\android\app\src\debug\AndroidManifest.xml
+INJECTED from C:\Users\91805\myown\Groupie\android\app\src\debug\AndroidManifest.xml
+INJECTED from C:\Users\91805\myown\Groupie\android\app\src\debug\AndroidManifest.xml
 	tools:overrideLibrary
 		ADDED from [com.google.firebase:firebase-auth:22.0.0] C:\Users\91805\.gradle\caches\transforms-3\f2585cf44996ac27f88306250cf33811\transformed\jetified-firebase-auth-22.0.0\AndroidManifest.xml:23:9-61
 	android:targetSdkVersion
-		INJECTED from C:\Users\91805\myown\chat_app\android\app\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\91805\myown\chat_app\android\app\src\debug\AndroidManifest.xml
+		INJECTED from C:\Users\91805\myown\Groupie\android\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\91805\myown\Groupie\android\app\src\debug\AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from C:\Users\91805\myown\chat_app\android\app\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\91805\myown\chat_app\android\app\src\debug\AndroidManifest.xml
+		INJECTED from C:\Users\91805\myown\Groupie\android\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\91805\myown\Groupie\android\app\src\debug\AndroidManifest.xml
 uses-permission#android.permission.INTERNET
-ADDED from C:\Users\91805\myown\chat_app\android\app\src\debug\AndroidManifest.xml:6:5-66
+ADDED from C:\Users\91805\myown\Groupie\android\app\src\debug\AndroidManifest.xml:6:5-66
 MERGED from [com.google.firebase:firebase-auth:22.0.0] C:\Users\91805\.gradle\caches\transforms-3\f2585cf44996ac27f88306250cf33811\transformed\jetified-firebase-auth-22.0.0\AndroidManifest.xml:25:5-67
 MERGED from [com.google.firebase:firebase-auth:22.0.0] C:\Users\91805\.gradle\caches\transforms-3\f2585cf44996ac27f88306250cf33811\transformed\jetified-firebase-auth-22.0.0\AndroidManifest.xml:25:5-67
 MERGED from [com.google.android.recaptcha:recaptcha:18.1.2] C:\Users\91805\.gradle\caches\transforms-3\9c645efb41dcacbd160e32d5a3e1894c\transformed\jetified-recaptcha-18.1.2\AndroidManifest.xml:7:5-67
@@ -201,13 +201,13 @@ MERGED from [com.google.android.recaptcha:recaptcha:18.1.2] C:\Users\91805\.grad
 MERGED from [com.google.firebase:firebase-firestore:24.6.1] C:\Users\91805\.gradle\caches\transforms-3\c07518f925c34bb7069820deb2ec2978\transformed\jetified-firebase-firestore-24.6.1\AndroidManifest.xml:13:5-67
 MERGED from [com.google.firebase:firebase-firestore:24.6.1] C:\Users\91805\.gradle\caches\transforms-3\c07518f925c34bb7069820deb2ec2978\transformed\jetified-firebase-firestore-24.6.1\AndroidManifest.xml:13:5-67
 	android:name
-		ADDED from C:\Users\91805\myown\chat_app\android\app\src\debug\AndroidManifest.xml:6:22-64
+		ADDED from C:\Users\91805\myown\Groupie\android\app\src\debug\AndroidManifest.xml:6:22-64
 service#com.google.firebase.components.ComponentDiscoveryService
-ADDED from [:firebase_auth] C:\Users\91805\myown\chat_app\build\firebase_auth\intermediates\merged_manifest\debug\AndroidManifest.xml:10:9-14:19
-MERGED from [:cloud_firestore] C:\Users\91805\myown\chat_app\build\cloud_firestore\intermediates\merged_manifest\debug\AndroidManifest.xml:10:9-14:19
-MERGED from [:cloud_firestore] C:\Users\91805\myown\chat_app\build\cloud_firestore\intermediates\merged_manifest\debug\AndroidManifest.xml:10:9-14:19
-MERGED from [:firebase_core] C:\Users\91805\myown\chat_app\build\firebase_core\intermediates\merged_manifest\debug\AndroidManifest.xml:10:9-14:19
-MERGED from [:firebase_core] C:\Users\91805\myown\chat_app\build\firebase_core\intermediates\merged_manifest\debug\AndroidManifest.xml:10:9-14:19
+ADDED from [:firebase_auth] C:\Users\91805\myown\Groupie\build\firebase_auth\intermediates\merged_manifest\debug\AndroidManifest.xml:10:9-14:19
+MERGED from [:cloud_firestore] C:\Users\91805\myown\Groupie\build\cloud_firestore\intermediates\merged_manifest\debug\AndroidManifest.xml:10:9-14:19
+MERGED from [:cloud_firestore] C:\Users\91805\myown\Groupie\build\cloud_firestore\intermediates\merged_manifest\debug\AndroidManifest.xml:10:9-14:19
+MERGED from [:firebase_core] C:\Users\91805\myown\Groupie\build\firebase_core\intermediates\merged_manifest\debug\AndroidManifest.xml:10:9-14:19
+MERGED from [:firebase_core] C:\Users\91805\myown\Groupie\build\firebase_core\intermediates\merged_manifest\debug\AndroidManifest.xml:10:9-14:19
 MERGED from [com.google.firebase:firebase-auth:22.0.0] C:\Users\91805\.gradle\caches\transforms-3\f2585cf44996ac27f88306250cf33811\transformed\jetified-firebase-auth-22.0.0\AndroidManifest.xml:66:9-72:19
 MERGED from [com.google.firebase:firebase-auth:22.0.0] C:\Users\91805\.gradle\caches\transforms-3\f2585cf44996ac27f88306250cf33811\transformed\jetified-firebase-auth-22.0.0\AndroidManifest.xml:66:9-72:19
 MERGED from [com.google.firebase:firebase-firestore:24.6.1] C:\Users\91805\.gradle\caches\transforms-3\c07518f925c34bb7069820deb2ec2978\transformed\jetified-firebase-firestore-24.6.1\AndroidManifest.xml:16:9-22:19
@@ -221,25 +221,25 @@ MERGED from [com.google.firebase:firebase-common:20.3.2] C:\Users\91805\.gradle\
 	android:directBootAware
 		ADDED from [com.google.firebase:firebase-common:20.3.2] C:\Users\91805\.gradle\caches\transforms-3\284fd5eeca4a29a0814ba444369e2acf\transformed\jetified-firebase-common-20.3.2\AndroidManifest.xml:34:13-43
 	android:name
-		ADDED from [:firebase_auth] C:\Users\91805\myown\chat_app\build\firebase_auth\intermediates\merged_manifest\debug\AndroidManifest.xml:10:18-89
+		ADDED from [:firebase_auth] C:\Users\91805\myown\Groupie\build\firebase_auth\intermediates\merged_manifest\debug\AndroidManifest.xml:10:18-89
 meta-data#com.google.firebase.components:io.flutter.plugins.firebase.auth.FlutterFirebaseAuthRegistrar
-ADDED from [:firebase_auth] C:\Users\91805\myown\chat_app\build\firebase_auth\intermediates\merged_manifest\debug\AndroidManifest.xml:11:13-13:85
+ADDED from [:firebase_auth] C:\Users\91805\myown\Groupie\build\firebase_auth\intermediates\merged_manifest\debug\AndroidManifest.xml:11:13-13:85
 	android:value
-		ADDED from [:firebase_auth] C:\Users\91805\myown\chat_app\build\firebase_auth\intermediates\merged_manifest\debug\AndroidManifest.xml:13:17-82
+		ADDED from [:firebase_auth] C:\Users\91805\myown\Groupie\build\firebase_auth\intermediates\merged_manifest\debug\AndroidManifest.xml:13:17-82
 	android:name
-		ADDED from [:firebase_auth] C:\Users\91805\myown\chat_app\build\firebase_auth\intermediates\merged_manifest\debug\AndroidManifest.xml:12:17-124
+		ADDED from [:firebase_auth] C:\Users\91805\myown\Groupie\build\firebase_auth\intermediates\merged_manifest\debug\AndroidManifest.xml:12:17-124
 meta-data#com.google.firebase.components:io.flutter.plugins.firebase.firestore.FlutterFirebaseFirestoreRegistrar
-ADDED from [:cloud_firestore] C:\Users\91805\myown\chat_app\build\cloud_firestore\intermediates\merged_manifest\debug\AndroidManifest.xml:11:13-13:85
+ADDED from [:cloud_firestore] C:\Users\91805\myown\Groupie\build\cloud_firestore\intermediates\merged_manifest\debug\AndroidManifest.xml:11:13-13:85
 	android:value
-		ADDED from [:cloud_firestore] C:\Users\91805\myown\chat_app\build\cloud_firestore\intermediates\merged_manifest\debug\AndroidManifest.xml:13:17-82
+		ADDED from [:cloud_firestore] C:\Users\91805\myown\Groupie\build\cloud_firestore\intermediates\merged_manifest\debug\AndroidManifest.xml:13:17-82
 	android:name
-		ADDED from [:cloud_firestore] C:\Users\91805\myown\chat_app\build\cloud_firestore\intermediates\merged_manifest\debug\AndroidManifest.xml:12:17-134
+		ADDED from [:cloud_firestore] C:\Users\91805\myown\Groupie\build\cloud_firestore\intermediates\merged_manifest\debug\AndroidManifest.xml:12:17-134
 meta-data#com.google.firebase.components:io.flutter.plugins.firebase.core.FlutterFirebaseCoreRegistrar
-ADDED from [:firebase_core] C:\Users\91805\myown\chat_app\build\firebase_core\intermediates\merged_manifest\debug\AndroidManifest.xml:11:13-13:85
+ADDED from [:firebase_core] C:\Users\91805\myown\Groupie\build\firebase_core\intermediates\merged_manifest\debug\AndroidManifest.xml:11:13-13:85
 	android:value
-		ADDED from [:firebase_core] C:\Users\91805\myown\chat_app\build\firebase_core\intermediates\merged_manifest\debug\AndroidManifest.xml:13:17-82
+		ADDED from [:firebase_core] C:\Users\91805\myown\Groupie\build\firebase_core\intermediates\merged_manifest\debug\AndroidManifest.xml:13:17-82
 	android:name
-		ADDED from [:firebase_core] C:\Users\91805\myown\chat_app\build\firebase_core\intermediates\merged_manifest\debug\AndroidManifest.xml:12:17-124
+		ADDED from [:firebase_core] C:\Users\91805\myown\Groupie\build\firebase_core\intermediates\merged_manifest\debug\AndroidManifest.xml:12:17-124
 uses-permission#android.permission.ACCESS_NETWORK_STATE
 ADDED from [com.google.firebase:firebase-auth:22.0.0] C:\Users\91805\.gradle\caches\transforms-3\f2585cf44996ac27f88306250cf33811\transformed\jetified-firebase-auth-22.0.0\AndroidManifest.xml:26:5-79
 MERGED from [com.google.android.recaptcha:recaptcha:18.1.2] C:\Users\91805\.gradle\caches\transforms-3\9c645efb41dcacbd160e32d5a3e1894c\transformed\jetified-recaptcha-18.1.2\AndroidManifest.xml:8:5-79
