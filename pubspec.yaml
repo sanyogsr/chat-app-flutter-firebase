@@ -28,7 +28,7 @@ environment:
 # the latest version available on pub.dev. To see which dependencies have newer
 # versions available, run `flutter pub outdated`.
 dependencies:
-  cloud_firestore: ^4.8.0
+  cloud_firestore: ^4.8.3
   cupertino_icons: ^1.0.2
   firebase_auth: ^4.6.2
   firebase_core: ^2.13.1
@@ -70,7 +70,7 @@ flutter:
     - assets/groupie_icon.png
     - assets/login.png
     - assets/register.png
-    - packages/cupertino_icons/assets/CupertinoIcons.ttf
+    # - packages/cupertino_icons/assets/CupertinoIcons.ttf
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
   # For details regarding adding assets from package dependencies, see
