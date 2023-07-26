@@ -11,7 +11,7 @@ Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp(options: DefaultFirebaseOptions.currentPlatform);
   runApp(Main());
-}      
+}
 
 class Main extends StatefulWidget {
   const Main({Key? key}) : super(key: key);
@@ -34,6 +34,7 @@ class _MainState extends State<Main> {
             {
               setState(() {
                 _isSignedIn = value;
+                print('signedIn');
               })
             }
         });
