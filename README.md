@@ -22,12 +22,12 @@ Hey guys, it's my new project called Goupie chat app. Let's take a look at its i
 
 ## App Features
 
--Signup & Login with email and password
--create a group
--Message in those groups
--search any group
--join the group
--exit the group
--logout from the app
+* Signup & Login with email and password
+* create a group
+* Message in those groups
+* search any group
+* join the group
+* exit the group
+* logout from the app
 
 Happy coding.....!
