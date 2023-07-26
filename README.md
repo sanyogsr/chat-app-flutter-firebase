@@ -20,15 +20,14 @@ Hey guys, it's my new project called Goupie chat app. Let's take a look at its i
   <img src="https://github.com/sanyogsr/chat-app-flutter-firebase/assets/109460363/c7ffad98-8c10-483b-9501-9e60ef02bc1d" width="200" alt="Screenshot 9">
 </div>
 
-## Getting Started
+## App Features
 
-This project is a starting point for a Flutter application.
+-Signup & Login with email and password
+-create a group
+-Message in those groups
+-search any group
+-join the group
+-exit the group
+-logout from the app
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Happy coding.....!
